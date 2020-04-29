@@ -172,7 +172,7 @@ function scoreRender(){
     //scoreDiv.style.display = "none";
     scoreDiv.style.display = "block";
     const scorePerCent = Math.round(100 * score/questions.length);
-    scoreDiv.innerHTML += "</br></br></br>You Scored"+"<p>"+scorePerCent+"%</p></br>";
+
     quiz.style.display = "none";
     start.style.display="block";
 }
