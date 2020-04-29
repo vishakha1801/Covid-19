@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    color: #8785a2;
+    text-align: center;
+    background:#f6f6f6;
+    text-decoration: none;
+}
+
+#container{
+    margin : 150px auto;
+    background-color:#ffc7c7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+}
+#start{
+    font-size: 1.8em;
+    word-break: break-all;
+    width:100px;
+    height:150px;
+    border : 2px solid #8785a2;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    top:50px;
+    color :#8785a2;
+}
+#start:hover{
+    border: 3px solid #605f74;
+    color :#636275;
+}
+.btn{
+    padding: 1.5rem;
+    margin-top: 11rem;
+    color: #8785a2;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    position: absolute ;
+    left:47%;
+    top: 55%;
+    box-shadow: 0px 3px 5px 0px;
+}
+.btn-primary{ 
+    background: #ffc7c7;
+}
+.btn-primary:hover{
+	 
+    background: #ffe2e2;
+}
+
+#question{
+    width:700px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+#choices{
+    width : 700px;
+    position: absolute;
+    right : 0;
+    top : 125px;
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    margin-right: 1rem;
+}
+.choice:hover{
+    border : 2px solid grey;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 15px;
+    height : 15px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainer{
+    margin : 20px auto;
+    background-color:#ffe2e2;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px;
+    position: relative;
+    display: none;
+}
+
+#scoreContainer p{
+   margin : 20px auto;
+	top-margin:40px auto;
+    background-color:#add8e6;
+    opacity: 0.99;
+    height: 100px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px;
+    position: relative;
+    display: none;
+    
+}
+@media only screen and (max-width: 390px) {
+#container{
+    width=95%;
+     height: 35vh;
+       justify-items: center;
+       left: 50%;
+       top: 55%;
+       transform: translate(-50%, -50%);
+    
+    }
+}
+
+ @media only screen and (max-width: 600px) {
+ 
+    #question{
+        width: 300px;
+        
+
+    }
+    #question p{
+        padding: 5px;
+        font-size: 1.2rem;
+        left: 3px;
+        margin-right: 40px;
+        
+    }
+    .prog{
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-top: 5px;
+    }
+  
+    .choice{
+        width: 100px;
+       
+    }
+    .btn{
+        padding: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        position: absolute;
+        left: 38%;
+        top: 65%;
+        }
+  
+    .hide-on-small{
+        display: none;
+    }
+    #container{
+       width:340px;
+       height: 30vh;
+       justify-items: center;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+    }
+    #start{
+        font-size: 2.2rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #choices{
+        width: 300px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    #scoreContainer{
+        width:340px;
+        height: 30vh;
+        display: flex;
+        font-size: medium;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    #scoreContainer p{
+        font-size: 10px;
+        left: 45%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+
+    }
+
+ }
+ 

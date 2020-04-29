@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <center>
+    <h1>Coronavirus Assesment Tool</h1>
+    <p>Please complete this assessment tool to determine your category based on your symptoms</p>
+    <p class="hide-on-small">This screening tool does not guarantee 100% correctness. Please contact your nearest health-care worker to clarify any doubts.</p>
+    <div id="container">
+        <div id="start">Start Test!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+   <a href="../index.html" class="btn btn-primary">Homepage</a><br><br><div>
+    </center>
+</body>
+</html>
