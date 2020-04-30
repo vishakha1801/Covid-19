@@ -321,7 +321,7 @@ nav a {
     nav a#openup {
       display: block;
       background-color:#ffc7c7;;
-      width: 375px;
+      width: 110%;
       position: relative;
     }
 
